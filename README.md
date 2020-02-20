@@ -1,4 +1,4 @@
-# [UA_CRIS](https://renatovalente5.github.io/Labi-site)
+# [UA_CRIS](https://renatovalente5.github.io/UA_CRIS)
 
 ### Developers:
 - [Renato Valente](https://github.com/renatovalente5)
