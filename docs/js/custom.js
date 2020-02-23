@@ -88,7 +88,7 @@ $(document).ready(function(){
         $(".number-counters [data-to]").each(function () {
             var e = $(this).attr("data-to");
             $(this).delay(6e3).countTo({
-                from: 50,
+                from: 0,
                 to: e,
                 speed: 3e3,
                 refreshInterval: 50
@@ -119,7 +119,7 @@ $(document).ready(function(){
 
 // ==========  START GOOGLE MAP ========== //
 function initialize() {
-    var myLatLng = new google.maps.LatLng(40.633405, -8.659455);
+    var myLatLng = new google.maps.LatLng(40.631383, -8.657601);
 
     var mapOptions = {
         zoom: 14,
