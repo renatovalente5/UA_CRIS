@@ -101,17 +101,17 @@ body > section,
   color: #cccccc;
 }
 
-.devider:before,
+/* .devider:before, */
 .devider:after {
-  content: "______________________";
+  content: "____________________________________________";
   color: #e6e8ea;
   position: relative;
   bottom: 6px;
 }
 
-.devider:before {
+/* .devider:before {
   right: 10px;
-}
+} */
 
 .devider:after {
   left: 10px;
@@ -497,7 +497,7 @@ top: -8px;
 ==========================================*/
 
 #facts {
-	background-image: url("../img/ua_drone.png");
+	background-image: url("../img/campus_panoramico.jpg");
 	background-color: rgba(6,32,51,.8);
 	background-attachment: fixed !important;
 	background-position: center center;
@@ -506,7 +506,7 @@ top: -8px;
 	padding: 0;
 }
 
-.facts .devider:before,
+/* .facts .devider:before, */
 .facts .devider:after {
 	color: #737C85;
 }
@@ -647,7 +647,7 @@ label.error {
 
 .footer {
   background-color: #1ea78d;
-  border-top: 5px solid #062033;
+  border-top: 5px solid #163324;
   color: #fff;
 }
 
