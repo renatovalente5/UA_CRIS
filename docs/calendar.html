@@ -38,11 +38,21 @@
 		<link rel="stylesheet" href="css/media-queries.css">
 
 		<!-- Modernizer Script for old Browsers -->
-        <script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		
+		<style>
+ 
+			.vertical { 
+				border-left: 1.5px solid white; 
+				height: 50px; 
+				position:absolute; 
+				left: 76,43%; 
+			} 
+		</style>
 
     </head>
 	
-    <body id="body">
+	<body id="body">
 	
 		<!-- preloader -->
 		<!-- <div id="preloader">
@@ -64,7 +74,7 @@
 					<!-- /responsive nav button -->
 					
 					<!-- logo -->
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#body">
 						<h1 id="logo">
 							<img src="img/uacris-logo.png" alt="Brandi">
 						</h1>
@@ -74,10 +84,17 @@
 				
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li class="current"><a href="index.html">Home</a></li>
-						<!-- <li><a href="calendar.html">Calendar</a></li> -->
-                    </ul>
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body">Calendar</a></li>
+                        <li><a href="#tasks">Tasks List</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#deliverables">Deliverables</a></li>
+						
+					</ul>
+					<ul class="nav navbar-nav">
+						<div class="vertical"></div>
+						<li><a href="index.html">Home</a></li>
+					</ul>
                 </nav>
 				<!-- /main nav -->
 				
@@ -88,7 +105,8 @@
         ==================================== -->
 		
 		
-		        <!--
+		
+        <!--
         Home Slider
         ==================================== -->
 		
@@ -110,7 +128,7 @@
 						<div class="carousel-caption">
 							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">UA<span> CRIS</span></h2>
 							<!-- <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Current Research Information System</span> one page template.</h3> -->
-							<p data-wow-duration="1000ms" class="wow slideInRight animated"><span class="color">Current Research Information System</span> one page template.</p>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated"><span class="color">Current Research Information System</span> </p>
 							
 							<ul class="social-links text-center">
 								<li><a href="https://github.com/renatovalente5/UA_CRIS"><i class="fa fa-github fa-lg"></i></a></li>
@@ -149,6 +167,76 @@
         End Home SliderEnd
         ==================================== -->
 		
+        <!--
+        Tasks List
+        ==================================== -->
+		
+		<section id="tasks" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+						<h2>Tasks List</h2>
+						<div class="devider"></div>
+					</div>
+						
+				</div>
+			</div>
+		</section>
+		
+        <!--
+        End Tasks List
+        ==================================== -->
+		
+		
+        <!--
+        Schedule
+        ==================================== -->
+		
+		<section id="schedule" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2>Schedule</h2>
+						<div class="devider"></div>
+					</div>		
+					
+					
+				</div>
+			</div>
+		
+		</section>
+		
+        <!--
+        End Schedule
+		==================================== -->
+
+		
+		 <!--
+        Deliverables
+        ==================================== -->
+		
+		<section id="deliverables" class="features">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2>Deliverables</h2>
+						<div class="devider"></div>
+					</div>		
+					
+					
+				</div>
+			</div>
+		
+		</section>
+		
+        <!--
+        End Deliverables
+        ==================================== -->
+		
+			
 		
 		<footer id="footer" class="footer">
 			<div class="container">
@@ -157,7 +245,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
 						<div class="footer-single">
 							<img src="img/uacris-logo.png" alt="">
-							<p>To easier your work.</p>
+							<p>Easing your work.</p>
 						</div>
 					</div>
 				
