@@ -31,6 +31,15 @@ a {
             transition: all .3s ease-in 0s;
 }
 
+.negrito{
+  color: #298050;
+}
+
+.green{
+  color: #298050;
+  font-size: medium;
+}
+
 iframe {
     border: 0;
 }
@@ -41,7 +50,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-    color: #6CB670;
+    color: #298050;
 }
 
 h1, h2, h3,
