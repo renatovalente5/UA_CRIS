@@ -240,8 +240,14 @@ top: -8px;
 .social-links {
   margin-top: 5%;
 }
+.social-links2 {
+  margin-top: 5%;
+}
 
 .social-links li {
+	display: inline-block;
+}
+.social-links2 li {
 	display: inline-block;
 }
 
@@ -250,8 +256,17 @@ top: -8px;
   display: block;
   margin: 0 6px;
 }
+.social-links2 li a {
+  color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin: 0 6px;
+}
 
 .social-links li a:hover {
+  color: #fff;
+}
+
+.social-links2 li a:hover {
   color: #fff;
 }
 
@@ -491,6 +506,9 @@ top: -8px;
 .team-member .social-links {
   margin-top: 24%;
 }
+.team-member .social-links2 {
+  margin-top: 24%;
+}
 
 .team-member .social-links li a {
   background-color: #0d7c67;
@@ -499,6 +517,7 @@ top: -8px;
   padding: 10px 0 0;
   width: 42px;
 }
+
 
 
 /*=========================================
