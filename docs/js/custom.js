@@ -147,5 +147,59 @@ function initialize() {
 
 }
 
+function hideTextCV() {
+    var x = document.getElementById("CienciaVitae");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+function hideTextPTC() {
+    var x = document.getElementById("PTCRYSinc");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  } 
+
+  function hideTextO() {
+    var x = document.getElementById("ORCID");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function hideTexteuro() {
+    var x = document.getElementById("euroCRIS");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function hideTextDS() {
+    var x = document.getElementById("DSpace");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function hideTextSC() {
+    var x = document.getElementById("Scopus");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
 google.maps.event.addDomListener(window, "load", initialize);
 // ========== END GOOGLE MAP ========== //
