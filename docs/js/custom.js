@@ -86,7 +86,7 @@ $(document).ready(function(){
 	"use strict";
     $(".number-counters").appear(function () {
         $(".number-counters [data-to]").each(function () {
-            var e = $(this).attr("data-to");
+            var e = $(this).attr("");
             $(this).delay(6e3).countTo({
                 from: 0,
                 to: e,
