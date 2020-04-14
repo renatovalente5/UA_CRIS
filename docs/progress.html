@@ -357,9 +357,10 @@
 
 					<b>0000-0002-5228-0329</b>
 					<br></br>
-					<button onclick="myFunction()">Obtain</button>
+				<!--	<button onclick="myFunction()">Obtain</button>
 
-					<p id="demo"></p>
+					
+						<p id="demo"></p>
 			
 					<script>
 					function myFunction(){	
@@ -389,7 +390,33 @@
 							request.send();
 						}
 					}
-					</script>
+					</script> -->
+					
+					<button type="button" onclick="teste()">Change Content</button>
+					<div id="root">
+					
+					</div>
+					<script>
+						function teste() {
+							var request = new XMLHttpRequest()
+
+							request.open('GET', 'https://ptcrisync-api.herokuapp.com/rest/import/0000-0002-5848-2802', true)
+							request.onload = function () {
+								// Begin accessing JSON data here
+								var data = JSON.parse(this.response)
+
+								if (request.status >= 200 && request.status < 400) {
+									document.getElementById('root').innerHTML = "<pre>" + JSON.stringify(data, null, 4) + "</pre>"
+									//console.log(data)
+								} else {
+									console.log('error')
+								}
+							}
+
+							request.send()
+						}</script>
+
+
 					</div>
 				</div>
 				
