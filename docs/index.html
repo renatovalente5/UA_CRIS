@@ -375,6 +375,48 @@
         Meet Our Team
         ==================================== -->		
 		
+		<button onclick="myFunction()">Click me</button>
+
+		<p id="demo"></p>
+
+		<script>
+		function myFunction(){	
+
+			function createCORSRequest(method, url) {
+				var xhr = new XMLHttpRequest();
+				if ("withCredentials" in xhr) {
+					xhr.open(method, url, true);
+				} else if (typeof XDomainRequest != "undefined") {
+					xhr = new XDomainRequest();
+					xhr.open(method, url);
+				} else {
+					xhr = null;
+				}
+				return xhr;
+			}
+
+			var request = createCORSRequest("get", "https://ptcrisync-api.herokuapp.com/rest/import/0000-0002-5228-0329");
+			
+			//request.setRequestHeader('Origin','*');
+			if (request) {
+				request.onload = function () {
+					document.getElementById("demo").innerHTML = request.responseText
+
+
+				};
+				request.send();
+			}
+		}
+		</script>
+
+
+
+		<div>
+			<button onclick="httpGet()">CLICA KI</button>
+			<p id="teste"></p>
+		</div>
+
+
 		<section id="team" class="team">
 			<div class="container" style="padding-left:100px">
 				<div class="row">
@@ -546,7 +588,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 							<div class="counters-item">
 								<i class="fa fa-clock-o fa-3x"></i>
-								<strong data-to="80">0</strong>
+								<strong data-to="105">0</strong>
 								<p>Hours of Work</p>
 							</div>
 						</div>
@@ -718,6 +760,17 @@
 		</footer>
 		
 		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+		<script>
+		function httpGet()
+		{
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open( "GET", "https://ptcrisync-api.herokuapp.com/rest/import/0000-0002-5228-0329", false ); // false for synchronous request
+			xmlHttp.send( null );
+			document.getElementById("teste").innerHTML = "teeeeste"
+			//xmlHttp.responseText;
+		}
+		</script>
 
 		<!-- Essential jQuery Plugins
 		================================================== -->

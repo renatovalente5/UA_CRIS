@@ -352,8 +352,54 @@
 					<div class="sec-title text-center">
 						<div class="devider"></div>
 					</div>
+
+					<div class="sec-title text-center">
+
+					<h2 >PTCRISync Example</h2>
+					<br></br>
+
+					<label for="name">ORCiD:</label>
+
+					<b>0000-0002-5228-0329</b>
+					<br></br>
+					<button onclick="myFunction()">Obtain</button>
+
+					<p id="demo"></p>
+			
+					<script>
+					function myFunction(){	
+			
+						function createCORSRequest(method, url) {
+							var xhr = new XMLHttpRequest();
+							if ("withCredentials" in xhr) {
+								xhr.open(method, url, true);
+							} else if (typeof XDomainRequest != "undefined") {
+								xhr = new XDomainRequest();
+								xhr.open(method, url);
+							} else {
+								xhr = null;
+							}
+							return xhr;
+						}
+						var request = createCORSRequest("get", 'https://ptcrisync-api.herokuapp.com/rest/import/0000-0002-5228-0329');
+						if (request) {
+							request.onload = function () {
+								text=JSON.parse(request.responseText);
+								//document.getElementById("demo").textContent = 
+								var textedJson = JSON.stringify(request.responseText, undefined, 4);
+								$('#demo').text(textedJson);
+			
+			
+							};
+							request.send();
+						}
+					}
+					</script>
+					</div>
 				</div>
+				
 			</div>
+		
 		</section>
 		
 		
@@ -361,7 +407,6 @@
         End Deliverables
         ==================================== -->
 		
-			
 		
 		<footer id="footer" class="footer">
 			<div class="container">
